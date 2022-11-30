@@ -9,9 +9,9 @@
         android:id="@+id/card_character"
         android:layout_width="150dp"
         android:layout_height="222dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
         app:cardCornerRadius="20dp"
         app:cardElevation="4dp">
 
@@ -19,7 +19,8 @@
             android:id="@+id/iv_image"
             android:layout_width="match_parent"
             android:layout_height="140dp"
-            android:src="@drawable/rick_morty_sq"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rick"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -30,7 +31,8 @@
             android:layout_marginStart="12dp"
             android:layout_marginBottom="54dp"
             android:text="@string/alive"
-            android:textColor="@color/gray" />
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/tv_name"
@@ -38,8 +40,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginStart="12dp"
-            android:layout_marginBottom="32dp"
-            android:text="@string/rick_and_morty"
-            android:textColor="@color/black" />
+            android:layout_marginBottom="28dp"
+            android:text="@string/rick"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
